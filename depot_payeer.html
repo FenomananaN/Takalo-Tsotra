@@ -44,8 +44,9 @@
 
 	<section class="container mt-5">
 		<div class="p-3 text-white" id="reserve-and-echange">
-			<p>Solde Payeer Disponible : <span class="text-danger fw-bold"> 500 USD</span></p>
-			<p>Cours de depot : <span class="text-danger fw-bold">3900 ar</span></p>
+			<h4 class="text-center text-primary fw-bold">DEPOT PAYEER</h4>
+			<p>Solde Payeer disponible: <span class="text-primary fw-bold">500 USD</span></p>
+			<p>Cours du retrait : <span class="text-primary fw-bold"> 3800 AR/USD</span></p>
 		</div>
 
 		<div class="row mt-3 justify-content-center">
@@ -53,7 +54,7 @@
 				<h4 >Depot Payeer</h4>
 			</div>
 			<div class="col-3">
-				<a href="retrait_payeer.html"><button class="btn btn-danger rounded-pill">Retrait</button></a>
+				<button class="btn btn-primary rounded-pill"> Faire un Retrait</button>
 			</div>
 		</div>
 
@@ -61,32 +62,32 @@
 			<div class="col-lg-6 col-md-9 col-sm-10">
 				<form id="form">
 					<label class="form-label">Solde Payeer Demmandée : </label>
-				    <div class="input-group input-group-lg mb-3">
+				    <div class="input-group  mb-3">
 				    	<span class="input-group-text">USD</span>
-				    	<input type="text" name="solde" class="form-control form-control-lg" id="solde_demande" placeholder="15" onblur="tauxDeChange()">
+				    	<input type="text" name="solde" class="form-control" id="solde_demande" placeholder="15">
 				    </div>
 
 				    <label class="form-label">Numero du Compte Payeer : </label>
-				    <div class="input-group input-group-lg mb-3">
-				    	<span class="input-group-text"><img src="img/pe.png" width="40" height="30"></span>
+				    <div class="input-group  mb-3">
+				    	<span class="input-group-text"><img src="img/pe.png" width="35" height="25"></span>
 				    	<input type="text" name="numcompte" class="form-control" id="numero_compte" placeholder="PXXXXXXXXXXX">
 				    </div>
 
 				    <label class="form-label">Total à payer via Mvola : </label>
-				    <div class="input-group input-group-lg mb-3">
-				    	<span class="input-group-text"><img src="img/mvola.png" width="40" height="30"></span>
+				    <div class="input-group mb-3">
+				    	<span class="input-group-text"><img src="img/mvola.png" width="35" height="25"></span>
 				    	<input type="text" name="mvola" class="form-control" id="tot_mobile" placeholder="5000" readonly>
 				    </div>
 
-				    <label class="form-label">Numero Mvola : </label>
-				    <div class="input-group input-group-lg mb-3">
-				    	<span class="input-group-text"><img src="img/phone_light.svg"></span>
+				     <label class="form-label">Numero Mvola : </label>
+				    <div class="input-group mb-3">
+				    	<span class="input-group-text"><img src="img/phone_light.svg" width="35" height="25"></span>
 				    	<input type="telephone" name="numvola" class="form-control" id="numero_mobile" placeholder="034*******">
 				    </div>
 
-				    <label class="form-label">Nom du compte Mvola : </label>
-				    <div class="input-group input-group-lg mb-3">
-				    	<span class="input-group-text"><img src="img/user.svg" width="40" height="30"></span>
+				     <label class="form-label">Nom du compte Mvola : </label>
+				    <div class="input-group mb-3">
+				    	<span class="input-group-text"><img src="img/user.svg" width="35" height="25"></span>
 				    	<input type="textr" name="name_mvola" class="form-control" id="nom_compte_mobile" placeholder="example: Rabe">
 				    </div>
 
@@ -96,8 +97,8 @@
 				    	</label>
 				    </div>
 
-				    <button type="button" class="btn btn-danger rounded-pill" data-bs-toggle="modal"
-				    data-bs-target="#detail_demande" id="buttonDemanderDepot">Demander</button>
+				    <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+				    data-bs-target="#detail_demande">Demander</button>
 
 				    <div class="modal fade" id="detail_demande">
 				    	<div class="modal-dialog modal-dialog-centered">
@@ -111,13 +112,18 @@
 
 				    			<!-- modal body -->
 				    			<div class="modal-body">
-				    				
+				    				<p>-Solde demande : <span class="text-success fw-bold"> 5 USD</span></p>
+				                    <p>-Numero de Compte : <span class="text-success fw-bold"> P124589876</span></p>
+				                    <hr>
+				                    <p>-Total a payer via Mvola : <span class="text-success fw-bold"> 5200 Ariary</span></p>
+				                    <p>-Numero de telephone : <span class="text-success fw-bold"> 0349896155</span></p>
+				                    <p>-Nom du Compte Mvola : <span class="text-success fw-bold"> Rabe</span></p>
 				    			</div>
 
 				    			<!-- footer of modal -->
 				    			<div class="modal-footer">
-				    				<button  type="button" class="btn btn-secondary rounded-pill"  data-bs-dismiss="modal">Annuler</button>
-					                <button type="submit" class="btn btn-danger rounded-pill ms-1"> Confirmer</button>
+				    				<button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Annuler</button>
+					                <button type="submit" class="btn btn-danger rounded-pill ms-1"> Comfirmer</button>
 				    			</div>
 				    		</div>
 				    	</div>

@@ -75,7 +75,7 @@ body{
 
 /* START DEPOT_PAYEER STYLE */
 #reserve-and-echange{
-	width: 312px;
+	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px;
@@ -98,10 +98,10 @@ body{
 #form div .form-control{
 	padding-left: 65px;
 	position: relative;
-	border: 2px solid white;
+	border: 1px solid white;
 	background-color: #25292f;
 	color: white;
-	border-radius: 17px;
+	border-radius: 15px;
 }
 
 
