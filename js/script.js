@@ -1,3 +1,12 @@
-//var solde_demande = document.getElementById("solde_demande").value;
-document.getElementById("solde_demande")
-.addEventListener("onblur",console.log("feno"));
+//fix mobile nav menu automatic collapse
+$(function(){ //mitovy amin'ny documen.addEventListener("DOMContentLoaded",....)
+	$(".navbar-toggler").blur( function(event){
+	//mitovy amin'ny document.querySelector("#navbar-toggler").addEventListener("blur",....)
+		var screenwidth=window.innerWidth;
+		
+		if(screenwidth<758){
+			console.log("ready");
+			$("#main-nav").collapse('hide');
+		}
+	});
+});
