@@ -12,6 +12,10 @@ body{
 #brandLogo p{
 	margin-bottom: 0rem;
 }
+.active{
+	color: white;
+	border-bottom: 2px solid white;
+}
 
 /* END HEADER */
 
@@ -124,6 +128,10 @@ body{
 	/* HEADER */
 	#brandLogo p{
 		font-size: 12pt;
+	}
+
+	.navbar-nav{
+		text-align: center;
 	}
 
 /* END HEADER */
